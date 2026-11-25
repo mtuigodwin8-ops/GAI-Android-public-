@@ -3,7 +3,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
-id("org.jetbrains.kotlin.kapt") version "2.4.21" apply false
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -24,12 +24,12 @@ android {
 }
 
 dependencies {
+    val roomVersion = "2.8.5"
 
-implementation("androidx.room:room-runtime:2.7.2")
-implementation("androidx.room:room-ktx:2.7.2")
-kapt("androidx.room:room-compiler:2.7.2")
+    implementation("androidx.room:room-runtime:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
+
     implementation(platform("androidx.compose:compose-bom:2025.08.00"))
-
     implementation("androidx.activity:activity-compose:1.10.1")
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
