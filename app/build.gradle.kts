@@ -25,7 +25,7 @@ android {
 
 dependencies {
     val roomVersion = "2.8.5"
-    val lifecycleVersion = "2.11.1"
+    val lifecycleVersion = "2.9.4"
 
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
