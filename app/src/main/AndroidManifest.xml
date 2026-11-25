@@ -3,14 +3,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-    android:name=".GaiApplication"
+        android:name="com.gai.assistant.GaiApplication"
         android:allowBackup="true"
         android:label="GAI"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.gai.assistant.MainActivity"
             android:exported="true">
 
             <intent-filter>
