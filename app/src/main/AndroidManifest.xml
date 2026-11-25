@@ -3,6 +3,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
+    android:name=".GaiApplication"
         android:allowBackup="true"
         android:label="GAI"
         android:theme="@android:style/Theme.Material.Light.NoActionBar"
